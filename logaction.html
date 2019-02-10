@@ -17,7 +17,25 @@
 	</header>
 
 	<main>
-		
+		<form action="#" id="logActionForm">
+			<p>Your Name: </p><input type="text" name="FullName" placeholder="Type your name here...">
+			<p>Email: </p><input type="email" name="EmailAddress" placeholder="Type your email here...">
+			<p>Issue: </p>
+				<select>
+					<option value"" disabled selected hidden>Please choose...</option>
+					<option value="hnf">Health and Safety</option>
+					<option value="comfort">Comfort</option>
+					<option value="other">Other</option>
+				</select>
+
+			<p>Description: </p><input type="text" name="Desc" placeholder="Brief description of issue...">
+			<p>Details: </p><input type="text" name="Details" placeholder="Extra details here...">
+			<p>Upload Picture</p><input type="file" name="pic" accept="image/*">
+			<button type="submit" form="logActionForm" value="submit">Submit</button>
+			<button type
+			<button type="reset" value="reset">Clear</button>
+			<button type="button" value="viewPrevActions">View Previous Actions</button>
+		</form>
 	</main>
 
 	<footer>
