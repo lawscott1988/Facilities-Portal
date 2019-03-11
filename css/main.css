@@ -1,7 +1,40 @@
 /* --- MOBILE VIEW --- */
 
+* {
+  font-family: Arial;
+  margin: 0px;
+}
 
+.nav_main {
+  width: 100%;
+  border-top: 2px solid green;
+  border-bottom: 2px solid green;
+}
 
+.nav_main ul {
+  list-style-type: none;
+  width: 100%;
+  padding: 0px;
+}
+
+.nav_main li {
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+}
+
+.activeNav > li {
+  background-color: grey;
+}
+
+.nav_main li:hover {
+  background-color: grey;
+}
+
+.nav_main a {
+  text-decoration: none;
+}
 
 
 
