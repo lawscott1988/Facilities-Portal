@@ -4,6 +4,23 @@
 
 
 
+/* Key-system CSS */
 
+.action_box button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+}
 
+.action_box button:hover{
+	background-color: #32CD32;
+}
+
+.search_box {
+	padding: 13px 32px;
+	text-align: center;
+}
 /* --- LARGE SCREEN VIEW --- */
