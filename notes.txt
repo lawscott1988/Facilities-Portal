@@ -1,2 +1,25 @@
 09-02-2019
 
+I created the basic template for the index page. I'm still not
+quite sure what I want to have on the first page or how the
+exact layout of the website will be. Perhaps I need to sit
+down and make some wireframes first to get a basic idea of how
+I want the layout to be
+
+TO DO:
+	- Make wireframes
+
+10-02-2019
+
+I've started making the wireframes for the main page, view actions,
+log actions pages. Both for mobile and large screen views. I also
+added the log action form to the logaction.html page. I learnt quite
+a bit about form fucntionality and buttons doing this.
+
+12-02-2019
+
+I made the view actions page template. I began creation of the
+action task log information section. This will eventually change
+to be interactive so users can log and view their actions, as
+well as the action team to be able to update and complete these
+actions.
