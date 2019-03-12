@@ -26,13 +26,22 @@
 
 /* Key-system CSS */
 
+.main_box {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
 .action_box button {
 	background-color: #4CAF50;
 	border: none;
 	color: white;
-	padding: 15px 32px;
+	padding: 20px 32px;
+	width: 100%;
 	text-align: center;
 	text-decoration: none;
+	font-size: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .action_box button:hover{
@@ -40,11 +49,12 @@
 }
 
 .search_box {
-	padding: 13px 32px;
-	text-align: center;
+	width: 100%;
+	padding: 20px 32px;
+	margin: 8px 0;
+	font-size: 20px;
+	display: inline-block;
+	box-sizing: border-box;
 }
-<<<<<<< HEAD
+
 /* --- LARGE SCREEN VIEW --- */
-=======
-/* --- LARGE SCREEN VIEW --- */
->>>>>>> css
