@@ -27,19 +27,19 @@
 /* Key-system CSS */
 
 .main_box {
-	margin-left: 5%;
-	margin-right: 5%;
+	margin-left: 1%;
+	margin-right: 1%;
 }
 
 .action_box button {
 	background-color: #4CAF50;
 	border: none;
 	color: #fff;
-	padding: 20px 32px;
+	padding: 50px 32px;
 	width: 100%;
 	text-align: center;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 50px;
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
@@ -50,22 +50,101 @@
 
 .search_box {
 	width: 100%;
-	padding: 20px 32px;
+	padding: 50px 32px;
 	margin: 8px 0;
-	font-size: 20px;
+	font-size: 50px;
 	display: inline-block;
 	box-sizing: border-box;
 }
 
 #view_box {
-  background-color: yellow;
+	background-color: yellow;
+}
+
+.filter_container ul {
+	list-style-type: none;
 }
 
 .checkbox_container {
-  background-color: #4CAF50;
-  border-style: solid;
-  border-color: #000;
-  padding: 5px;
-  margin: 2px;
+	display: block;
+	background-color: #fff;
+	padding: 50px 20px;
+	font-size: 50px;
+	cursor: pointer;
 }
+
+.checkbox_container:hover {
+	background-color: #F8F8F8;
+}
+
+.filter_button {
+	display: block;
+	background-color: #fff;
+	padding: 50px 20px;
+	font-size: 50px;
+}
+
+.filter_button:hover {
+	background-color: #F8F8F8;
+}
+
+.buttonswitch {
+	float: right;
+	position: relative;
+	background: #fff;
+	width: 50px;
+	height: 50px;
+	border-radius: 3px;
+	cursor: pointer;
+	border: 1px solid #ddd;
+}
+
+.flipswitch {
+	float: right;
+	position: relative;
+	background: #fff;
+	width: 120px;
+	height: 40px;
+	-webkit-appearance: initial;
+	border-radius: 3px;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	outline: none;
+	font-size: 14px;
+	font-family: Trebuchet, Arial, sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+	border: 1px solid #ddd;
+}
+
+.flipswitch:hover {
+	background: #000;
+}
+
+.flipswitch:after {
+	position: absolute;
+	top: 5%;
+	display: block;
+	line-height: 32px;
+	width: 45%;
+	height: 90%;
+	background: #fff;
+	box-sizing: border-box;
+	text-align: center;
+	transition: all 0.3s ease-in 0s;
+	color: black;
+	border: #888 1px solid;
+	border-radius: 3px;
+}
+
+.flipswitch:after {
+  left: 2%;
+  content: "OFF";
+}
+
+.flipswitch:checked:after {
+  left: 53%;
+  background-color: #7CFC00;
+  content: "ON";
+}
+
 /* --- LARGE SCREEN VIEW --- */
