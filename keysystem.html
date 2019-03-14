@@ -4,6 +4,7 @@
 
 	<title>Facilites Portal Main</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
 </head>
 <body>
 
@@ -43,39 +44,40 @@
 		<div class="filter_containter">
 					
 					<label class="filter_button">Filter By
-						<input class="buttonswitch" type="button" value="&#8595;" name="filter_dropdown">
+						<input class="buttonswitch" type="button" value="&#8595;" name="filter_dropdown" onclick="dropDownFunc()"/>
 					
 					</label>
-					<label class="checkbox_container">Key Name
-						<input class="flipswitch" type="checkbox" name="keyname_filter">
+					<div id="filterDropDown">
+						<label class="checkbox_container">Key Name
+							<input class="flipswitch" type="checkbox" name="keyname_filter">
 
-					</label>
-			
-					<label class="checkbox_container">ID Number
-						<input class="flipswitch" type="checkbox" name="id_filter"></input>
+						</label>
+				
+						<label class="checkbox_container">ID Number
+							<input class="flipswitch" type="checkbox" name="id_filter"/>
 
-					</label>
+						</label>
 
-					<label class="checkbox_container">Key Holder
-						<input class="flipswitch" type="checkbox" name="keyholder_filter">
+						<label class="checkbox_container">Key Holder
+							<input class="flipswitch" type="checkbox" name="keyholder_filter"/>
 
-					</label>
+						</label>
 
-					<label class="checkbox_container">Location
-						<input class="flipswitch" type="checkbox" name="location_filter">
+						<label class="checkbox_container">Location
+							<input class="flipswitch" type="checkbox" name="location_filter"/>
 
-					</label>
+						</label>
 
-					<label class="checkbox_container">Type
-						<input class="flipswitch" type="checkbox" name="type_filter">
+						<label class="checkbox_container">Type
+							<input class="flipswitch" type="checkbox" name="type_filter"/>
 
-					</label>
+						</label>
 
-					<label class="checkbox_container">Total No.
-						<input class="flipswitch" type="checkbox" name="number_filter">
+						<label class="checkbox_container">Total No.
+							<input class="flipswitch" type="checkbox" name="number_filter"/>
 
-					</label>
-
+						</label>
+					</div>
 		</div>
 			<div class="key_box">
 				<div class="key_info">
@@ -105,5 +107,8 @@
 		<p>Author: Scott Law</p>
 		<p>Copyright &copy; 2019</p>
 	</footer>
+	
+	<script type="text/javascript" src="js/common.js"></script>
+	
 </body>
 </html>
