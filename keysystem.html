@@ -26,14 +26,21 @@
 <section class="action_box">
 	<h2>Key Maintenance<h2>
 
-		<button type="button">New Key Box</button>
-		<button type="button">Add Key</button>
-		<button type="button">Remove Key</button>
+		<button id="newKeyBox" type="button" onclick='displayModal("newKeyBoxModal")'>New Key Box</button>
+		<div id="newKeyBoxModal" class="button_modal" style="display:none">
+			<div class="new_key_box_modal_content">
+			<span id="nkb_close" class="button_close" onclick='closeModal("newKeyBoxModal")'>&times;</span>
+			<p>Test Modal</p>
+		</div>
+		</div>
+
+		<button id="addKey" type="button">Add Key</button>
+		<button id="removeKey" type="button">Remove Key</button>
 
 	<h2>Allocate key to staff</h2>
 
-		<button type="button">New Allocation</button>
-		<button type="button">Remove Allocation</button>
+		<button id="newAllocation" type="button">New Allocation</button>
+		<button id="removeAllocation" type="button">Remove Allocation</button>
 	<div class="search_bar">
 		<input class="search_box" type="text" placeholder="Search Key Box...">
 	</div>

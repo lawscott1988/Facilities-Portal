@@ -176,4 +176,40 @@
   background-color: yellow;
 }
 
+/* KEY-SYSTEM ---- button modals */
+
+#newKeyBoxModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding_top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #ffffff80;
+}
+
+.new_key_box_modal_content {
+  background-color: #fefefe;
+  margin: auto;
+  padding 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.button_close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.button_close:hover, .button_close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* --- LARGE SCREEN VIEW --- */
