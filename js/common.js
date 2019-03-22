@@ -17,7 +17,7 @@ function displayModal(elt) {
 	x.style.display = "block";
 }
 
-function closeModal() {
-	var x = document.getElementById("newKeyBoxModal");
+function closeModal(elt) {
+	var x = document.getElementById(elt);
 	x.style.display = "none";
 }

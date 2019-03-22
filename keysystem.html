@@ -27,12 +27,19 @@
 	<h2>Key Maintenance<h2>
 
 		<button id="newKeyBox" type="button" onclick='displayModal("newKeyBoxModal")'>New Key Box</button>
-		<div id="newKeyBoxModal" class="button_modal" style="display:none">
-			<div class="new_key_box_modal_content">
-			<span id="nkb_close" class="button_close" onclick='closeModal("newKeyBoxModal")'>&times;</span>
-			<p>Test Modal</p>
-		</div>
-		</div>
+			<div id="newKeyBoxModal" class="button_modal" style="display:none">
+				<div class="new_key_box_modal_content">
+				<span id="nkb_close" class="button_close" onclick='closeModal("newKeyBoxModal")'>&times;</span>
+				<p>Test Modal</p>
+					<form>
+						<label for="key_box_name">Keybox Name</label>
+						<input type="text" id="key_box_name" name="keyboxname" placeholder="Enter new key box name...">
+						
+						<label for="key_box_size">Size of Keybox</label>
+						<input type="text" id="key_box_size" name="keyboxsize" placeholder="Enter size (number of hooks etc)...">
+					</form>
+				</div>
+			</div>
 
 		<button id="addKey" type="button">Add Key</button>
 		<button id="removeKey" type="button">Remove Key</button>
