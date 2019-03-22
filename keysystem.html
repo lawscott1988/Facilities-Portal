@@ -30,13 +30,15 @@
 			<div id="newKeyBoxModal" class="button_modal" style="display:none">
 				<div class="new_key_box_modal_content">
 				<span id="nkb_close" class="button_close" onclick='closeModal("newKeyBoxModal")'>&times;</span>
-				<p>Test Modal</p>
-					<form>
-						<label for="key_box_name">Keybox Name</label>
-						<input type="text" id="key_box_name" name="keyboxname" placeholder="Enter new key box name...">
+				<p class="modal_title">New Key Box Form</p>
+					<form class="new_key_box_form">
+						<label for="key_box_name"><p class="modal_label">Keybox Name</p></label>
+						<input type="text" class="modal_input" id="key_box_name" name="keyboxname" placeholder="e.g. O&M Key Box...">
 						
-						<label for="key_box_size">Size of Keybox</label>
-						<input type="text" id="key_box_size" name="keyboxsize" placeholder="Enter size (number of hooks etc)...">
+						<label for="key_box_size"><p class="modal_label">Size of Keybox</p></label>
+						<input type="text" class="modal_input" id="key_box_size" name="keyboxsize" placeholder="e.g. 300">
+						
+						<input type="submit" class="modal_submit" value="Create">
 					</form>
 				</div>
 			</div>
