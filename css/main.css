@@ -191,8 +191,12 @@
   background-color: #ffffff80;
 }
 
-.new_key_box_modal_content {
-	padding: 20px;
+.modal_content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
 }
 
 .modal_input {
@@ -240,18 +244,10 @@ input[text=text] {
 	box-sizing: border-box;
 }
 
-.new_key_box_modal_content {
-  background-color: #fefefe;
-  margin: auto;
-  padding 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
 .button_close {
   color: #aaaaaa;
   float: right;
-  font-size: 28px;
+  font-size: 70px;
   font-weight: bold;
 }
 

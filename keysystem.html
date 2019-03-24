@@ -28,23 +28,57 @@
 
 		<button id="newKeyBox" type="button" onclick='displayModal("newKeyBoxModal")'>New Key Box</button>
 			<div id="newKeyBoxModal" class="button_modal" style="display:none">
-				<div class="new_key_box_modal_content">
+				<div class="modal_content">
 				<span id="nkb_close" class="button_close" onclick='closeModal("newKeyBoxModal")'>&times;</span>
 				<p class="modal_title">New Key Box Form</p>
-					<form class="new_key_box_form">
+					<form class="modal_form">
 						<label for="key_box_name"><p class="modal_label">Keybox Name</p></label>
 						<input type="text" class="modal_input" id="key_box_name" name="keyboxname" placeholder="e.g. O&M Key Box...">
-						
+
 						<label for="key_box_size"><p class="modal_label">Size of Keybox</p></label>
 						<input type="text" class="modal_input" id="key_box_size" name="keyboxsize" placeholder="e.g. 300">
-						
+
 						<input type="submit" class="modal_submit" value="Create">
 					</form>
 				</div>
 			</div>
 
-		<button id="addKey" type="button">Add Key</button>
-		<button id="removeKey" type="button">Remove Key</button>
+			<button id="addKey" type="button" onclick='displayModal("addKeyModal")'>Add Key</button>
+			<div id="addKeyModal" class="button_modal" style="display:none">
+				<div class="modal_content">
+				<span id="nk_close" class="button_close" onclick='closeModal("addKeyModal")'>&times;</span>
+				<p class="modal_title">Add Key Form</p>
+					<form class="modal_form">
+						<label for="key_name"><p class="modal_label">Key Name</p></label>
+						<input type="text" class="modal_input" id="key_name" name="keyname" placeholder="e.g. Bike Locker 1">
+
+						<label for="key_id"><p class="modal_label">Key ID Number</p></label>
+						<input type="text" class="modal_input" id="key_id" name="keyid" placeholder="Enter Key ID No.">
+
+						<label for="key_num"><p class="modal_label">Number of Keys</p></label>
+						<input type="text" class="modal_input" id="key_num" name="keynum" placeholder="e.g. 2">
+
+						<input type="submit" class="modal_submit" value="Create Key">
+					</form>
+				</div>
+			</div>
+
+		<button id="removeKey" type="button" onclick='displayModal("removeKeyModal")'>Remove Key</button>
+		<div id="removeKeyModal" class="button_modal" style="display:none">
+			<div class="modal_content">
+			<span id="remove_close" class="button_close" onclick='closeModal("removeKeyModal")'>&times;</span>
+			<p class="modal_title">Add Key Form</p>
+				<form class="modal_form">
+					<label for="rmkey_name"><p class="modal_label">Key Name</p></label>
+					<input type="text" class="modal_input" id="rmkey_name" name="rmkeyname" placeholder="e.g. Bike Locker 1">
+
+					<label for="rmkey_id"><p class="modal_label">Key ID Number</p></label>
+					<input type="text" class="modal_input" id="rmkey_id" name="rmkeyid" placeholder="Enter Key ID No.">
+
+					<input type="submit" class="modal_submit" value="Remove Key">
+				</form>
+			</div>
+		</div>
 
 	<h2>Allocate key to staff</h2>
 
