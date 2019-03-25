@@ -67,13 +67,19 @@
 		<div id="removeKeyModal" class="button_modal" style="display:none">
 			<div class="modal_content">
 			<span id="remove_close" class="button_close" onclick='closeModal("removeKeyModal")'>&times;</span>
-			<p class="modal_title">Add Key Form</p>
+			<p class="modal_title">Remove Key Form</p>
 				<form class="modal_form">
-					<label for="rmkey_name"><p class="modal_label">Key Name</p></label>
-					<input type="text" class="modal_input" id="rmkey_name" name="rmkeyname" placeholder="e.g. Bike Locker 1">
-
-					<label for="rmkey_id"><p class="modal_label">Key ID Number</p></label>
-					<input type="text" class="modal_input" id="rmkey_id" name="rmkeyid" placeholder="Enter Key ID No.">
+					<label for="search_key_name"><p class="modal_label">Search Key</p></label>
+					<input type="text" class="modal_input" id="search_key_name" name="searchkeyname" placeholder="e.g. Bike Locker 1, AB865">
+					<div id="key_search_results">
+						 <ul class="key_list_group">
+							<li class="key_item">Test</li>
+							<li class="key_item">Another Test</li>
+							<li class="key_item">Sample</li>
+							<li class="key_item">Another Sample</li>
+							<li class="key_item">Last one</li>
+						  </ul>
+					</div>
 
 					<input type="submit" class="modal_submit" value="Remove Key">
 				</form>

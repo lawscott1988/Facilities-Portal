@@ -257,4 +257,19 @@ input[text=text] {
   cursor: pointer;
 }
 
+#key_search_results {
+	display: block;
+	margin: 8px 0;
+	width: 100%;
+	padding: 30px 20px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 50px;
+	box-sizing: border-box;
+}
+
+#key_list_group ul {
+	list-style-type: none;
+}
+
 /* --- LARGE SCREEN VIEW --- */
