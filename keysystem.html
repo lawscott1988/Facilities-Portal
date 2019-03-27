@@ -23,129 +23,130 @@
 	<main class="main_box">
 		<h1>Key System</h1>
 
-<section class="action_box">
-	<h2>Key Maintenance<h2>
+	<section class="action_box">
+		<h2>Key Maintenance</h2>
 
-		<button id="newKeyBox" type="button" onclick='displayModal("newKeyBoxModal")'>New Key Box</button>
-			<div id="newKeyBoxModal" class="button_modal" style="display:none">
-				<div class="modal_content">
-				<span class="button_close" onclick='closeModal("newKeyBoxModal")'>&times;</span>
-				<p class="modal_title">New Key Box Form</p>
-					<form class="modal_form">
-						<label for="key_box_name"><p class="modal_label">Keybox Name</p></label>
-						<input type="text" class="modal_input" id="key_box_name" name="keyboxname">
+			<button id="newKeyBox" type="button" onclick='displayModal("newKeyBoxModal")'>New Key Box</button>
+				<div id="newKeyBoxModal" class="button_modal" style="display:none">
+					<div class="modal_content">
+					<span class="button_close" onclick='closeModal("newKeyBoxModal")'>&times;</span>
+					<p class="modal_title">New Key Box Form</p>
+						<form class="modal_form">
+							<label class="modal_label" for="key_box_name">Keybox Name</label>
+							<input type="text" class="modal_input" id="key_box_name" name="keyboxname">
 
-						<label for="key_box_size"><p class="modal_label">Size of Keybox</p></label>
-						<input type="text" class="modal_input" id="key_box_size" name="keyboxsize">
+							<label class="modal_label" for="key_box_size">Size of Keybox</label>
+							<input type="text" class="modal_input" id="key_box_size" name="keyboxsize">
 
-						<input type="submit" class="modal_submit" value="Create">
-					</form>
+							<input type="submit" class="modal_submit" value="Create">
+						</form>
+					</div>
 				</div>
-			</div>
 
 			<button id="addKey" type="button" onclick='displayModal("addKeyModal")'>Add Key</button>
-			<div id="addKeyModal" class="button_modal" style="display:none">
-				<div class="modal_content">
-				<span class="button_close" onclick='closeModal("addKeyModal")'>&times;</span>
-				<p class="modal_title">Add Key Form</p>
-					<form class="modal_form">
-						<label for="key_name"><p class="modal_label">Key Name</p></label>
-						<input type="text" class="modal_input" id="key_name" name="keyname">
+				<div id="addKeyModal" class="button_modal" style="display:none">
+					<div class="modal_content">
+					<span class="button_close" onclick='closeModal("addKeyModal")'>&times;</span>
+					<p class="modal_title">Add Key Form</p>
+						<form class="modal_form">
+							<label class="modal_label" for="key_name">Key Name</label>
+							<input type="text" class="modal_input" id="key_name" name="keyname">
 
-						<label for="key_id"><p class="modal_label">Key ID Number</p></label>
-						<input type="text" class="modal_input" id="key_id" name="keyid">
+							<label class="modal_label" for="key_id">Key ID Number</label>
+							<input type="text" class="modal_input" id="key_id" name="keyid">
 
-						<label for="key_num"><p class="modal_label">Number of Keys</p></label>
-						<input type="text" class="modal_input" id="key_num" name="keynum">
+							<label class="modal_label" for="key_num">Number of Keys</label>
+							<input type="text" class="modal_input" id="key_num" name="keynum">
 
-						<input type="submit" class="modal_submit" value="Create Key">
-					</form>
+							<input type="submit" class="modal_submit" value="Create Key">
+						</form>
+					</div>
 				</div>
-			</div>
 
-		<button id="removeKey" type="button" onclick='displayModal("removeKeyModal")'>Remove Key</button>
-		<div id="removeKeyModal" class="button_modal" style="display:none">
-			<div class="modal_content">
-			<span class="button_close" onclick='closeModal("removeKeyModal")'>&times;</span>
-			<p class="modal_title">Remove Key Form</p>
-				<form class="modal_form">
-					<label for="search_key_name"><p class="modal_label">Search Key</p></label>
-					<input type="text" class="modal_input" id="search_key_name" name="searchkeyname">
-					<div id="key_search_results" class="search_results_box">
-						 <ul class="key_list_group">
-							<li class="key_item">Test</li>
-							<li class="key_item">Another Test</li>
-							<li class="key_item">Sample</li>
-							<li class="key_item">Another Sample</li>
-							<li class="key_item">Last one</li>
-						  </ul>
+			<button id="removeKey" type="button" onclick='displayModal("removeKeyModal")'>Remove Key</button>
+				<div id="removeKeyModal" class="button_modal" style="display:none">
+					<div class="modal_content">
+					<span class="button_close" onclick='closeModal("removeKeyModal")'>&times;</span>
+					<p class="modal_title">Remove Key Form</p>
+						<form class="modal_form">
+							<label class="modal_label" for="search_key_name">Search Key</label>
+							<input type="text" class="modal_input" id="search_key_name" name="searchkeyname">
+							<div id="key_search_results" class="search_results_box">
+								 <div class="key_list_group">
+									<div class="key_item">Test</div>
+									<div class="key_item">Another Test</div>
+									<div class="key_item">Sample</div>
+									<div class="key_item">Another Sample</div>
+									<div class="key_item">Last one</div>
+								  </div>
+							</div>
+
+							<input type="submit" class="modal_submit" value="Remove Key">
+						</form>
 					</div>
+				</div>
 
-					<input type="submit" class="modal_submit" value="Remove Key">
-				</form>
-			</div>
-		</div>
+		<h2>Allocate key to staff</h2>
 
-	<h2>Allocate key to staff</h2>
-
-		<button id="newAllocation" type="button" onclick='displayModal("newAllocationModal")'>New Allocation</button>
-		<div id="newAllocationModal" class="button_modal" style="display:none">
-			<div class="modal_content">
-			<span class="button_close" onclick='closeModal("newAllocationModal")'>&times;</span>
-			<p class="modal_title">New Allocation Form</p>
-				<form class="modal_form">
-				
-					<label for="new_allocation"><p class="modal_label">Name</p></label>
-					<input type="text" class="modal_input" id="new_allocation_name" name="newallocationname">
-					
-					<label for="new_alloc_search"><p class="modal_label">Search Key</p></label>
-						<input type="text" class="modal_input" id="new_alloc_search" name="newallocsearch">
+			<button id="newAllocation" type="button" onclick='displayModal("newAllocationModal")'>New Allocation</button>
+				<div id="newAllocationModal" class="button_modal" style="display:none">
+					<div class="modal_content">
+					<span class="button_close" onclick='closeModal("newAllocationModal")'>&times;</span>
+					<p class="modal_title">New Allocation Form</p>
+						<form class="modal_form">
 						
-					<div id="new_alloc_search_results" class="search_results_box">
-						 <ul class="key_list_group">
-							<li class="key_item">Key 1</li>
-							<li class="key_item">Key 2</li>
-							<li class="key_item">Key 3</li>
-							<li class="key_item">Key 4</li>
-							<li class="key_item">Key 5</li>
-						  </ul>
-					</div>
+							<label class="modal_label" for="new_allocation_name">Name</label>
+							<input type="text" class="modal_input" id="new_allocation_name" name="newallocationname">
+							
+							<label class="modal_label" for="new_alloc_search">Search Key</label>
+								<input type="text" class="modal_input" id="new_alloc_search" name="newallocsearch">
+								
+							<div id="new_alloc_search_results" class="search_results_box">
+								 <div class="key_list_group">
+									<div class="key_item">Key 1</div>
+									<div class="key_item">Key 2</div>
+									<div class="key_item">Key 3</div>
+									<div class="key_item">Key 4</div>
+									<div class="key_item">Key 5</div>
+								  </div>
+							</div>
 
-					<input type="submit" class="modal_submit" value="Allocate">
-				</form>
-			</div>
-		</div>
-		
-		<button id="removeAllocation" type="button" onclick='displayModal("removeAllocationModal")'>Remove Allocation</button>
-		<div id="removeAllocationModal" class="button_modal" style="display:none">
-			<div class="modal_content">
-			<span class="button_close" onclick='closeModal("removeAllocationModal")'>&times;</span>
-			<p class="modal_title">Remove Allocation Form</p>
-				<form class="modal_form">
-					<label for="remove_allocation_search"><p class="modal_label">Search Name</p></label>
-					<input type="text" class="modal_input" id="remove_allocation_search" name="removeallocationsearch">
-					<div id="removeAllocSearchResults" class="search_results_box">
-						 <ul class="key_list_group">
-							<li class="key_item">Test</li>
-							<li class="key_item">Another Test</li>
-							<li class="key_item">Sample</li>
-							<li class="key_item">Another Sample</li>
-							<li class="key_item">Last one</li>
-						  </ul>
+							<input type="submit" class="modal_submit" value="Allocate">
+						</form>
 					</div>
+				</div>
+			
+			<button id="removeAllocation" type="button" onclick='displayModal("removeAllocationModal")'>Remove Allocation</button>
+				<div id="removeAllocationModal" class="button_modal" style="display:none">
+					<div class="modal_content">
+					<span class="button_close" onclick='closeModal("removeAllocationModal")'>&times;</span>
+					<p class="modal_title">Remove Allocation Form</p>
+						<form class="modal_form">
+							<label class="modal_label" for="remove_allocation_search">Search Name</label>
+							<input type="text" class="modal_input" id="remove_allocation_search" name="removeallocationsearch">
+							<div id="removeAllocSearchResults" class="search_results_box">
+								 <div class="key_list_group">
+									<div class="key_item">Test</div>
+									<div class="key_item">Another Test</div>
+									<div class="key_item">Sample</div>
+									<div class="key_item">Another Sample</div>
+									<div class="key_item">Last one</div>
+								  </div>
+							</div>
 
-					<input type="submit" class="modal_submit" value="Remove Allocation">
-				</form>
-		
-		
+							<input type="submit" class="modal_submit" value="Remove Allocation">
+						</form>
+					</div>
+				</div>
+			
+		<div class="search_bar">
+			<input class="search_box" type="text">
 		</div>
-	<div class="search_bar">
-		<input class="search_box" type="text">
-	</div>
-</section>
+	</section>
 
 
 		<section id="view_box">
+		<h3>Key Box Details</h3>
 		<div class="filter_containter">
 
 					<label class="filter_button">Filter By
@@ -214,7 +215,7 @@
 		<p>Copyright &copy; 2019</p>
 	</footer>
 
-	<script type="text/javascript" src="js/common.js"></script>
+	<script src="js/common.js"></script>
 
 </body>
 </html>

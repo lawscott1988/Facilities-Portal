@@ -259,17 +259,24 @@ input[text=text] {
 
 .search_results_box {
 	display: block;
-	margin: 8px 0;
 	width: 100%;
-	padding: 30px 20px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	font-size: 50px;
 	box-sizing: border-box;
 }
 
-.key_list_group ul {
+.key_list_group div {
+	margin-left: 0;
 	list-style-type: none;
+}
+
+.key_list_group div:hover {
+	background-color: #765;
+}
+
+.key_list_group div:active {
+	background-color: #345;
 }
 
 /* --- LARGE SCREEN VIEW --- */
