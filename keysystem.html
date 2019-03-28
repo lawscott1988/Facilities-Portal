@@ -4,6 +4,7 @@
 
 	<title>Facilites Portal Main</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+
 </head>
 <body>
 
@@ -19,66 +20,186 @@
 			</nav>
 	</header>
 
-	<main>
+	<main class="main_box">
 		<h1>Key System</h1>
 
-<section class="action_box">
-	<button type="button">New Key Box</button>
-	<button type="button">Add Key</button>
-	<button type="button">Remove Key</button>
-	<button type="button">New Allocation</button>
-	<button type="button">Remove Allocation</button>
+	<section class="action_box">
+		<h2>Key Maintenance</h2>
 
-	<input class="search_box" type="text" placeholder="Search Key Box...">
-</section>
+			<button id="newKeyBox" type="button" onclick='displayModal("newKeyBoxModal")'>New Key Box</button>
+				<div id="newKeyBoxModal" class="button_modal" style="display:none">
+					<div class="modal_content">
+					<span class="button_close" onclick='closeModal("newKeyBoxModal")'>&times;</span>
+					<p class="modal_title">New Key Box Form</p>
+						<form class="modal_form">
+							<label class="modal_label" for="key_box_name">Keybox Name</label>
+							<input type="text" class="modal_input" id="key_box_name" name="keyboxname">
+
+							<label class="modal_label" for="key_box_size">Size of Keybox</label>
+							<input type="text" class="modal_input" id="key_box_size" name="keyboxsize">
+
+							<input type="submit" class="modal_submit" value="Create">
+						</form>
+					</div>
+				</div>
+
+			<button id="addKey" type="button" onclick='displayModal("addKeyModal")'>Add Key</button>
+				<div id="addKeyModal" class="button_modal" style="display:none">
+					<div class="modal_content">
+					<span class="button_close" onclick='closeModal("addKeyModal")'>&times;</span>
+					<p class="modal_title">Add Key Form</p>
+						<form class="modal_form">
+							<label class="modal_label" for="key_name">Key Name</label>
+							<input type="text" class="modal_input" id="key_name" name="keyname">
+
+							<label class="modal_label" for="key_id">Key ID Number</label>
+							<input type="text" class="modal_input" id="key_id" name="keyid">
+
+							<label class="modal_label" for="key_num">Number of Keys</label>
+							<input type="text" class="modal_input" id="key_num" name="keynum">
+
+							<input type="submit" class="modal_submit" value="Create Key">
+						</form>
+					</div>
+				</div>
+
+			<button id="removeKey" type="button" onclick='displayModal("removeKeyModal")'>Remove Key</button>
+				<div id="removeKeyModal" class="button_modal" style="display:none">
+					<div class="modal_content">
+					<span class="button_close" onclick='closeModal("removeKeyModal")'>&times;</span>
+					<p class="modal_title">Remove Key Form</p>
+						<form class="modal_form">
+							<label class="modal_label" for="search_key_name">Search Key</label>
+							<input type="text" class="modal_input" id="search_key_name" name="searchkeyname">
+							<div id="key_search_results" class="search_results_box">
+								 <div class="key_list_group">
+									<div class="key_item">Test</div>
+									<div class="key_item">Another Test</div>
+									<div class="key_item">Sample</div>
+									<div class="key_item">Another Sample</div>
+									<div class="key_item">Last one</div>
+								  </div>
+							</div>
+
+							<input type="submit" class="modal_submit" value="Remove Key">
+						</form>
+					</div>
+				</div>
+
+		<h2>Allocate key to staff</h2>
+
+			<button id="newAllocation" type="button" onclick='displayModal("newAllocationModal")'>New Allocation</button>
+				<div id="newAllocationModal" class="button_modal" style="display:none">
+					<div class="modal_content">
+					<span class="button_close" onclick='closeModal("newAllocationModal")'>&times;</span>
+					<p class="modal_title">New Allocation Form</p>
+						<form class="modal_form">
+						
+							<label class="modal_label" for="new_allocation_name">Name</label>
+							<input type="text" class="modal_input" id="new_allocation_name" name="newallocationname">
+							
+							<label class="modal_label" for="new_alloc_search">Search Key</label>
+								<input type="text" class="modal_input" id="new_alloc_search" name="newallocsearch">
+								
+							<div id="new_alloc_search_results" class="search_results_box">
+								 <div class="key_list_group">
+									<div class="key_item">Key 1</div>
+									<div class="key_item">Key 2</div>
+									<div class="key_item">Key 3</div>
+									<div class="key_item">Key 4</div>
+									<div class="key_item">Key 5</div>
+								  </div>
+							</div>
+
+							<input type="submit" class="modal_submit" value="Allocate">
+						</form>
+					</div>
+				</div>
+			
+			<button id="removeAllocation" type="button" onclick='displayModal("removeAllocationModal")'>Remove Allocation</button>
+				<div id="removeAllocationModal" class="button_modal" style="display:none">
+					<div class="modal_content">
+					<span class="button_close" onclick='closeModal("removeAllocationModal")'>&times;</span>
+					<p class="modal_title">Remove Allocation Form</p>
+						<form class="modal_form">
+							<label class="modal_label" for="remove_allocation_search">Search Name</label>
+							<input type="text" class="modal_input" id="remove_allocation_search" name="removeallocationsearch">
+							<div id="removeAllocSearchResults" class="search_results_box">
+								 <div class="key_list_group">
+									<div class="key_item">Test</div>
+									<div class="key_item">Another Test</div>
+									<div class="key_item">Sample</div>
+									<div class="key_item">Another Sample</div>
+									<div class="key_item">Last one</div>
+								  </div>
+							</div>
+
+							<input type="submit" class="modal_submit" value="Remove Allocation">
+						</form>
+					</div>
+				</div>
+			
+		<div class="search_bar">
+			<input class="search_box" type="text" placeholder="Search key box...">
+		</div>
+	</section>
 
 
 		<section id="view_box">
+		<h3>Key Box Details</h3>
+		<div class="filter_containter">
 
-			<label class="checkbox_container">Key Name
-				<input type="checkbox" name="keyname_filter">
-				<span class="checkmark"></span>
-			</label>
+					<label class="filter_button">Filter By
+						<input class="buttonswitch" type="button" value="&#8595;" name="filter_dropdown" onclick="dropDownFunc()"/>
 
-		<label class="checkbox_container">ID
-			<input type="checkbox" name="id_filter">
-			<span class="checkmark"></span>
-		</label>
+					</label>
+					<div id="filterDropDown" style="display:none;">
+						<label class="checkbox_container">Key Name
+							<input class="flipswitch" type="checkbox" name="keyname_filter">
 
-		<label class="checkbox_container">Key Holder
-			<input type="checkbox" name="keyholder_filter">
-			<span class="checkmark"></span>
-		</label>
+						</label>
 
-		<label class="checkbox_container">Location
-			<input type="checkbox" name="location_filter">
-			<span class="checkmark"></span>
-		</label>
+						<label class="checkbox_container">ID Number
+							<input class="flipswitch" type="checkbox" name="id_filter"/>
 
-		<label class="checkbox_container">Type
-			<input type="checkbox" name="type_filter">
-			<span class="checkmark"></span>
-		</label>
+						</label>
 
-		<label class="checkbox_container">No.
-			<input type="checkbox" name="number_filter">
-			<span class="checkmark"></span>
-		</label>
+						<label class="checkbox_container">Key Holder
+							<input class="flipswitch" type="checkbox" name="keyholder_filter"/>
+
+						</label>
+
+						<label class="checkbox_container">Location
+							<input class="flipswitch" type="checkbox" name="location_filter"/>
+
+						</label>
+
+						<label class="checkbox_container">Type
+							<input class="flipswitch" type="checkbox" name="type_filter"/>
+
+						</label>
+
+						<label class="checkbox_container">Total No.
+							<input class="flipswitch" type="checkbox" name="number_filter"/>
+
+						</label>
+					</div>
+		</div>
 
 			<div class="key_box">
 				<div class="key_info">
-					<div class="key_id">94324K1</div>
-					<div class="key_name">Bike Locker 1</div>
 					<div class="key_holder">Stephen Smith</div>
+					<div class="key_name">Bike Locker 1</div>
+					<div class="key_id">94324K1</div>
 					<div class="use_location">Bike Storage Area</div>
 					<div class="type">Storage Locker</div>
 					<div class="num_stored">2</div>
 				</div>
 
 				<div class="key_info">
-					<div class="key_id">AB865</div>
-					<div class="key_name">White Locker 25</div>
 					<div class="key_holder">Phillipa George</div>
+					<div class="key_name">White Locker 25</div>
+					<div class="key_id">AB865</div>
 					<div class="use_location">2nd Floor</div>
 					<div class="type">Storage Locker</div>
 					<div class="num_stored">4</div>
@@ -93,5 +214,8 @@
 		<p>Author: Scott Law</p>
 		<p>Copyright &copy; 2019</p>
 	</footer>
+
+	<script src="js/common.js"></script>
+
 </body>
 </html>
