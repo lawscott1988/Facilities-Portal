@@ -23,3 +23,13 @@ action task log information section. This will eventually change
 to be interactive so users can log and view their actions, as
 well as the action team to be able to update and complete these
 actions.
+
+03-04-2019
+
+I've finished the front-end for the buttons on the key-system page.
+I've also added a new navbar but it's needs some aesthetical changes.
+
+TO DO:
+	- add dropdown menu feature to navbar
+	- change aesthetics of navbar to match green colour themes
+
