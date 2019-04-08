@@ -18,11 +18,14 @@ html,body
 }
 
 .nav_main {
+  display: block;
   width: 100%;
+  background-color: #282828;
+  overflow: auto;
 }
 
 .nav_main a {
-  display: block;
+  display: none;
   width: 100%;
   background-color: #282828;
   text-decoration: none;
@@ -33,6 +36,13 @@ html,body
   text-align: center;
   font-size: 50px;
   color: #fff;
+}
+
+.nav_main a:last-child {
+  display: inline;
+  width: auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .nav_main a:hover {
