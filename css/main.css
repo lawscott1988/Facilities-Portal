@@ -38,7 +38,16 @@ html,body
   color: #fff;
 }
 
-.nav_main a:last-child {
+.nav_main .icon {
+  display: inline;
+  width: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.nav_main .icon_clicked {
+  position: absolute;
+  float: right;
   display: inline;
   width: auto;
   padding-left: 30px;
