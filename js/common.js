@@ -44,6 +44,7 @@ function expandMenu() {
 		link3,
 		link4,
 	]
+
 	for (i = 0; i < links.length; i++) {
 		if(links[i].style.display == "none") {
 			links[i].style.display = "block";

@@ -14,22 +14,21 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
+    overflow: visible;
 }
 
 .nav_main {
   display: block;
+  position: relative;
   width: 100%;
   background-color: #282828;
   overflow: auto;
 }
 
 .nav_main a {
-  display: none;
   width: 100%;
   background-color: #282828;
   text-decoration: none;
-  height: 100%;
   padding-top: 32px;
   padding-bottom: 32px;
   margin: 0;
@@ -40,27 +39,21 @@ html,body
 
 .nav_main .icon {
   display: inline;
+  float: right;
   width: auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 27.5px;
 }
 
 .nav_main .icon_clicked {
   position: absolute;
-  float: right;
-  display: inline;
+  right: 0px;
+  top: 0px;
   width: auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 27.5px
 }
 
 .nav_main a:hover {
   background-color: #808080;
-}
-
-.nav_main .icon {
-  display: block;
-  float: right;
 }
 
 /* Key-system CSS */
