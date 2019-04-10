@@ -153,4 +153,150 @@
 	border-radius: 3px;
 }
 
+<<<<<<< HEAD
+=======
+.flipswitch:after {
+  left: 2%;
+  content: "OFF";
+}
+
+.flipswitch:checked:after {
+  left: 53%;
+  background-color: #000;
+  border-color: #fff;
+  color: #fff;
+  content: "ON";
+}
+
+/* KEY-SYSTEM ---- KEY_BOX SECTION */
+
+.key_box {
+  margin: 0px;
+}
+
+.key_info {
+  display: inline-block;
+  border: 1px solid #000;
+  background-color: #F8F8F8;
+  width: 49%;
+  margin: 0px;
+}
+
+.key_info:nth-child(even) {
+  float: right;
+}
+
+.key_info div {
+  font-size: 38px;
+  border: 2px solid #000;
+  border-radius: 3px;
+  padding: 3px;
+  margin: 10px;
+  background-color: yellow;
+}
+
+/* KEY-SYSTEM ---- button modals */
+
+.button_modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 15%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #ffffff80;
+}
+
+.modal_content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal_input {
+	display: block;
+	margin: 8px 0;
+	width: 100%;
+	padding: 30px 20px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 50px;
+	box-sizing: border-box;
+}
+
+.modal_submit {
+	width: 100%;
+	background-color: #4CAF50;
+	color: white;
+	padding: 30px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	font-size: 50px;
+	cursor: pointer;
+}
+
+.modal_label {
+	font-size: 50px;
+	color: #4BE;
+	padding: 10px;
+}
+
+.modal_title {
+	font-size: 60px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+input[text=text] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.button_close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.button_close:hover, .button_close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.search_results_box {
+	display: block;
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 50px;
+	box-sizing: border-box;
+}
+
+.key_list_group div {
+	margin-left: 0;
+	list-style-type: none;
+}
+
+.key_list_group div:hover {
+	background-color: #765;
+}
+
+.key_list_group div:active {
+	background-color: #345;
+}
+
+>>>>>>> 99a9afebd9becb61b30ff6335eb6df122a098574
 /* --- LARGE SCREEN VIEW --- */
