@@ -168,6 +168,8 @@ html,body
 	border-radius: 3px;
 }
 
+<<<<<<< HEAD
+=======
 .flipswitch:after {
   left: 2%;
   content: "OFF";
@@ -311,4 +313,5 @@ input[text=text] {
 	background-color: #345;
 }
 
+>>>>>>> 99a9afebd9becb61b30ff6335eb6df122a098574
 /* --- LARGE SCREEN VIEW --- */
