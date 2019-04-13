@@ -10,14 +10,14 @@
 
 	<header>
 		<h1>Facilities Portal</h1>
-			<nav class="nav_main">
-				<ul>
-				<li><a href="index.html">Facilities Info</a></li>
-				<li><a href="logaction.html">Log Action</a></li>
-				<li><a href="viewaction.html">View Actions</a></li>
-				<li><a class="activeNav" href="keysystem.html">Key System</a></li>
-			</ul>
-			</nav>
+
+			<div id="navMain" class="nav_main">
+					<a id="facInfoL" href="index.html" style="display: none">Facilities Info</a>
+					<a id="logActionL" href="logaction.html" style="display: none">Log Action</a>
+					<a id="viewActionL" href="viewaction.html" style="display: none">View Actions</a>
+					<a id="keySystemL" class="activeNav" href="keysystem.html" style="display: none">Key System</a>
+					<a id="burgerIcon" class="icon" onclick="expandMenu()">&#9776;</a>
+			</div>
 	</header>
 
 	<main class="main_box">
@@ -94,13 +94,13 @@
 					<span class="button_close" onclick='closeModal("newAllocationModal")'>&times;</span>
 					<p class="modal_title">New Allocation Form</p>
 						<form class="modal_form">
-						
+
 							<label class="modal_label" for="new_allocation_name">Name</label>
 							<input type="text" class="modal_input" id="new_allocation_name" name="newallocationname">
-							
+
 							<label class="modal_label" for="new_alloc_search">Search Key</label>
 								<input type="text" class="modal_input" id="new_alloc_search" name="newallocsearch">
-								
+
 							<div id="new_alloc_search_results" class="search_results_box">
 								 <div class="key_list_group">
 									<div class="key_item">Key 1</div>
@@ -115,7 +115,7 @@
 						</form>
 					</div>
 				</div>
-			
+
 			<button id="removeAllocation" type="button" onclick='displayModal("removeAllocationModal")'>Remove Allocation</button>
 				<div id="removeAllocationModal" class="button_modal" style="display:none">
 					<div class="modal_content">
@@ -138,7 +138,7 @@
 						</form>
 					</div>
 				</div>
-			
+
 		<div class="search_bar">
 			<input class="search_box" type="text" placeholder="Search key box...">
 		</div>

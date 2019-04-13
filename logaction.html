@@ -8,14 +8,15 @@
 
 	<header>
 		<h1>Facilities Portal</h1>
-			<nav class="nav_main">
-				<ul>
-				<li><a href="index.html">Facilities Info</a></li>
-				<li><a class = "activeNav" href="logaction.html">Log Action</a></li>
-				<li><a href="viewaction.html">View Actions</a></li>
-				<li><a href="keysystem.html">Key System</a></li>
-			</ul>
-			</nav>
+
+		<div id="navMain" class="nav_main">
+				<a id="facInfoL" href="index.html" style="display: none">Facilities Info</a>
+				<a id="logActionL" class="activeNav" href="logaction.html" style="display: none">Log Action</a>
+				<a id="viewActionL" href="viewaction.html" style="display: none">View Actions</a>
+				<a id="keySystemL" href="keysystem.html" style="display: none">Key System</a>
+				<a id="burgerIcon" class="icon" onclick="expandMenu()">&#9776;</a>
+		</div>
+
 	</header>
 
 	<main>
@@ -43,6 +44,8 @@
 		<p>Author: Scott Law</p>
 		<p>Copyright &copy; 2019</p>
 	</footer>
+
+	<script src="js/common.js"></script>
 
 </body>
 </html>
