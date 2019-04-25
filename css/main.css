@@ -200,6 +200,8 @@ h1 {
 /* KEY-SYSTEM ---- KEY_BOX SECTION */
 
 .key_box {
+  display: flex;
+  justify-content: center;
   margin: 0px;
 }
 
@@ -207,20 +209,16 @@ h1 {
   display: inline-block;
   border: 1px solid #000;
   background-color: #F8F8F8;
-  width: 49%;
-  margin: 0px;
-}
-
-.key_info:nth-child(even) {
-  float: right;
+  width: 30%;
+  margin: 3px;
 }
 
 .key_info div {
-  font-size: 38px;
+  font-size: .5rem;
   border: 2px solid #000;
   border-radius: 3px;
   padding: 3px;
-  margin: 10px;
+  margin: 3px;
   background-color: yellow;
 }
 
