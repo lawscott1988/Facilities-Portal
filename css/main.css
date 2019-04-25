@@ -74,17 +74,24 @@ h1 {
 	margin-right: 1%;
 }
 
+.action_box {
+  display: flex;
+  justify-content: center;
+}
+
 .action_box button {
 	background-color: #4CAF50;
 	border: none;
 	color: #fff;
-	padding: 50px 32px;
-	width: 100%;
+	padding: 10px 10px;
+	width: 20%;
 	text-align: center;
 	text-decoration: none;
-	font-size: 50px;
+	font-size: .5rem;
 	margin-top: 5px;
 	margin-bottom: 5px;
+  margin-left: 1px;
+  margin-right: 1px;
 }
 
 .action_box button:hover{
@@ -179,8 +186,6 @@ h1 {
 	border-radius: 3px;
 }
 
-<<<<<<< HEAD
-=======
 .flipswitch:after {
   left: 2%;
   content: "OFF";
@@ -324,5 +329,4 @@ input[text=text] {
 	background-color: #345;
 }
 
->>>>>>> 99a9afebd9becb61b30ff6335eb6df122a098574
 /* --- LARGE SCREEN VIEW --- */
