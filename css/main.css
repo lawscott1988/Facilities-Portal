@@ -116,8 +116,8 @@ h1 {
 .checkbox_container {
 	display: block;
 	background-color: #fff;
-	padding: 50px 20px;
-	font-size: 50px;
+	padding: 20px 20px;
+	font-size: 1rem;
 	cursor: pointer;
 }
 
@@ -128,8 +128,8 @@ h1 {
 .filter_button {
 	display: block;
 	background-color: #fff;
-	padding: 50px 20px;
-	font-size: 50px;
+	padding: 20px 20px;
+	font-size: 1rem;
 }
 
 .filter_button:hover {
@@ -140,8 +140,8 @@ h1 {
 	float: right;
 	position: relative;
 	background: #fff;
-	width: 50px;
-	height: 50px;
+	width: 30px;
+	height: 30px;
 	border-radius: 3px;
 	cursor: pointer;
 	border: 1px solid #ddd;
