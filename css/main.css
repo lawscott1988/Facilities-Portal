@@ -19,6 +19,15 @@ html,body
 
 h1 {
   display: block;
+  margin: 2px; auto;
+}
+
+.key-system-title {
+  font-size: 1.8rem;
+}
+
+.facilities-portal-title {
+  font-size: 1.8rem;
 }
 
 .nav_main {
