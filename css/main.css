@@ -208,27 +208,52 @@ h1 {
 
 /* KEY-SYSTEM ---- KEY_BOX SECTION */
 
-.key_box {
+.key_box {/*
   display: flex;
   justify-content: center;
   margin: 0px;
+  */
 }
 
 .key_info {
-  display: inline-block;
+  display: block;
   border: 1px solid #000;
   background-color: #F8F8F8;
-  width: 30%;
-  margin: 3px;
+  font-size: 0; /* removes whitespace between child divs */
+  width: 100%;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 
 .key_info div {
+  display: inline-block;
   font-size: .5rem;
-  border: 2px solid #000;
-  border-radius: 3px;
-  padding: 3px;
-  margin: 3px;
+  border-right: 1px solid #000;
   background-color: yellow;
+}
+
+.key_holder {
+  width: 20%;
+}
+
+.key_name{
+  width: 20%;
+}
+
+.key_id {
+  width: 12%;
+}
+
+.use_location {
+  width: 25%;
+}
+
+.type {
+  width: 18%;
+}
+
+.num_stored {
+  width: 2%;
 }
 
 /* KEY-SYSTEM ---- button modals */
