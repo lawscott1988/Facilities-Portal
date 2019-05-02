@@ -218,7 +218,7 @@ h1 {
 .key_info {
   display: block;
   border: 1px solid #000;
-  background-color: #F8F8F8;
+  background-color: #FFFF00;
   font-size: 0; /* removes whitespace between child divs */
   width: 100%;
   margin-top: 1px;
@@ -229,7 +229,7 @@ h1 {
   display: inline-block;
   font-size: .5rem;
   border-right: 1px solid #000;
-  background-color: yellow;
+  background-color: #FFFF00;
 }
 
 .key_holder {
